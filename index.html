@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+
+    <!-- Tailwind And DaisyUI Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-color": "#ABEF5F",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .font-lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-lexend">
+    <header class="bg-amber-200 bg-opacity-50 py-4">
+      <nav class="w-11/12 mx-auto flex justify-between items-center">
+        <div>
+          <button class="px-6 py-3 font-bold rounded-lg bg-btn-color">
+            Blog
+          </button>
+        </div>
+        <div class="flex items-center gap-2 justify-center">
+          <img src="assets/logo.png" class="w-10" alt="" />
+          <p class="font-black">Donate Bangladesh</p>
+        </div>
+
+        <div class="flex items-center gap-2 justify-center">
+          <img src="assets/coin.png" class="w-10" alt="" />
+          <p class="font-bold"><span>5500</span> BDT</p>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-11/12 mx-auto mt-7 mb-2">
+      <!-- Button Segment -->
+      <div class="flex items-center justify-center gap-20">
+        <button class="bg-btn-color font-bold rounded-lg px-5 py-3">
+          Donation
+        </button>
+        <button class="bg-gray-200 font-bold rounded-lg px-5 py-3">
+          History
+        </button>
+        <!-- Button Segment End -->
+      </div>
+    </main>
+
+    <!-- JS -->
+    <script src="./scripts/utility.js"></script>
+  </body>
 </html>
