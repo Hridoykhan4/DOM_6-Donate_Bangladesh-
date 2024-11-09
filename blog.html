@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Tailwind And DaisyUI Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-color": "#ABEF5F",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .font-lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    
+    </style>
+
+    
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-lexend">
+    <header class="bg-amber-200 bg-opacity-50 py-4">
+      <nav class="w-11/12 mx-auto flex justify-between items-center">
+        <div>
+          <button id="home" class="px-6 py-3 font-bold rounded-lg bg-btn-color">
+            Home
+          </button>
+        </div>
+        <div class="flex items-center gap-2 justify-center">
+          <img src="assets/logo.png" class="w-10" alt="" />
+          <p class="font-black">Donate Bangladesh</p>
+        </div>
+
+        <div class="flex items-center gap-2 justify-center">
+          <img src="assets/coin.png" class="w-10" alt="" />
+          <p class="font-bold"><span id="total-budget">5500</span> BDT</p>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mt-4 w-11/12 mx-auto" style="scroll-behavior: smooth;">
+
+        <h3 class="my-10 font-extrabold text-xl">Important FAQ <span class="rounded-2xl border-black p-2 border-4">&#10067</span></h3>
+
+        <div class="space-y-5 bg-white border">
+            
+        <div class="collapse collapse-arrow bg-white border p-2">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a structured representation of a web page, where each HTML element is treated as an object in a tree-like structure. JavaScript uses the DOM to interact with and manipulate web content dynamically, allowing developers to change elements, attributes, styles, and content on a page.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-white border p-2">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">Click to open or close this one</div>
+            <div class="collapse-content">
+            <p>document.getElementById('id') <br>
+                document.querySelector('.class') <br>
+                 document.querySelectorAll('tag') </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-white border p-2">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">Why is event delegation in the context of the DOM and why it is useful</div>
+            <div class="collapse-content">
+             
+                <p>
+                    Event delegation is a technique in the DOM where instead of adding event listeners to individual child elements, you add a single listener to a common parent element <br>
+                    Reduces the number of event listeners, which is especially beneficial for dynamically created elements.
+                    </p>
+
+            </div>
+          </div>
+          
+
+          <div class="collapse collapse-arrow bg-white border p-2">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">What is event bubbling in the context of the DOM?</div>
+            <div class="collapse-content">
+                <p>
+                    Event bubbling is a type of event propagation in the DOM where an event starts from the most specific target element and "bubbles up" to the parent elements, eventually reaching the root element. <br>
+                    It allows you to handle events at a higher level, simplifying event handling for multiple child elements.
+                </p>
+            </div>
+        </div>
+        
+        
+        </div>
+
+          
+    </main>
+
+
+
+
+
+
+
+
+    <!-- JS -->
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/donation.js"></script>
+  </body>
+</html>
