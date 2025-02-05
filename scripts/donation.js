@@ -1,12 +1,10 @@
-/* document.getElementById("home").addEventListener("click", function () {
-  window.location.href = "index.html";
-}); */
-
 document.getElementById("donate-btn-1").addEventListener("click", function () {
   const donation = inputValueGetById("donation-input-1");
   if (isNaN(donation) || donation <= 0) {
     alert("Invalid Donation Amount");
     return;
+  } else {
+    my_modal_1.showModal();
   }
 
   const totalcollection = numberGetByText("total-collection");
@@ -46,6 +44,7 @@ document.getElementById("donate-btn-1").addEventListener("click", function () {
 
   div.appendChild(p);
   donationSection.appendChild(div);
+  document.getElementById("donation-input-1").value = "";
 });
 
 document.getElementById("donate-btn-2").addEventListener("click", function () {
@@ -90,6 +89,7 @@ document.getElementById("donate-btn-2").addEventListener("click", function () {
 
   div.appendChild(p);
   donationSection.appendChild(div);
+  document.getElementById("donation-input-2").value = "";
 });
 
 document.getElementById("donate-btn-3").addEventListener("click", function () {
@@ -133,6 +133,7 @@ document.getElementById("donate-btn-3").addEventListener("click", function () {
 
   div.appendChild(p);
   donationSection.appendChild(div);
+  document.getElementById("donation-input-3").value = "";
 });
 
 const history = document.getElementById("history");
