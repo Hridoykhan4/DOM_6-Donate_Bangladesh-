@@ -20,8 +20,8 @@ document.getElementById("history-btn").addEventListener("click", () => {
   document
     .getElementById("history-btn")
     .classList.add("bg-btn-color", "hover:bg-btn-color");
-  hideElementById("card-section");
   showElementById("history-section");
+  hideElementById("card-section");
 });
 document.getElementById("donation-btn").addEventListener("click", () => {
   document
